@@ -41,6 +41,19 @@ body {
 
 
 /**
+ * KEYFRAMES
+ */
+@keyframes swivel {
+    0% { transform: rotate(2deg) translateY(2px); } 
+    25% { transform: rotate(0deg); }
+    50% { transform: rotate(-2deg) translateY(0); } 
+    75% { transform: rotate(0); } 
+    100% { transform: rotate(2deg) translateY(-2px); }
+}
+
+
+
+/**
  * SPLASH
  */
 .splash {
@@ -107,4 +120,24 @@ body {
     .splash__text br {
         display: none;
     }
+}
+
+
+
+/**
+ * LOGO
+ */
+.logo {
+    display: block;
+    overflow: visible;
+}
+
+.logo__mustache {
+    transform-origin: center;
+
+    animation-name: swivel;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
