@@ -1,0 +1,110 @@
+/**
+ * BASE
+ */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.625em;
+    font-family: "Source Serif Pro", serif;
+    color: #212529;
+}
+
+
+
+/**
+ * UTILITIES
+ */
+.fw-light {
+    font-weight: 300;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fs-italic {
+    font-style: italic;
+}
+
+
+
+/**
+ * SPLASH
+ */
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F8F9FA;
+    display: flex;
+    align-items: center;
+}
+
+.splash__content {
+    width: 1080px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.splash__image {
+    display: block;
+    width: 175px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.splash__text {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 2.1875em;
+}
+
+.splash__text h1 {
+    font-size: 3em;
+    line-height: 1.267em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.splash__text h1 + p {
+    margin-top: 1.875em;
+}
+
+.splash__text p {
+    font-size: 1em;
+}
+
+.splash__text p + p {
+    margin-top: 1em;
+}
+
+/**
+ * SPLASH - Media Queries
+ */
+@media screen and (max-width: 480px) {
+    .splash__text br {
+        display: none;
+    }
+}
